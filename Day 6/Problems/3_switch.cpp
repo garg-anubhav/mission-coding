@@ -1,23 +1,18 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
-    int n;
+    int n = 0;
     cout << "Enter the number: ";
     cin >> n;
-
     switch (n)
     {
-    case '1':
-        if (n == 1)
-            cout << "One";
-        break;
-    case '2':
-        if (n == 1)
-            cout << "Not One";
+    case 1:
+        cout << "One";
         break;
     default:
-        cout << "Unknown";
+        cout << "Not One";
         break;
     }
     return 0;
