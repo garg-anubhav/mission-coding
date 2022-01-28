@@ -6,9 +6,9 @@ int main()
     cout << "Enter the year: ";
     cin >> n;
 
-    if ((n % 4 == 0) || (n % 100 == 0))
-        cout << "The year is leap year.";
+    if (((n % 4 == 0) && (n % 100 != 0)) || (n % 400 == 0))
+        cout << "Leap Year";
     else
-        cout << "The year is not a leap year.";
+        cout << "Not a Leap Year";
     return 0;
 }
